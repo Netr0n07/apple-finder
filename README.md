@@ -7,6 +7,12 @@ Small demo project for object detection with Roboflow. Includes:
 
 Note: The bundled model is for demonstration only. It was trained on a very small dataset (~50 images of apples). Expect false positives on similar fruit and non-apple objects. See “Model notes” below.
 
+## Roboflow model used
+- Platform: Roboflow
+- Model type: Roboflow 3.0 Object Detection (Fast)
+- Example project slug: `applefinder-im9ep` (your slug will differ)
+- Model ID format used in this repo: `project-slug/version`, e.g. `applefinder-im9ep/2`
+
 ## Requirements
 - Python 3.9+
 - Roboflow API key
@@ -64,6 +70,17 @@ python run_webcam.py
   - add “hard negatives” (similar fruit without annotations),
   - consider multi-class training (e.g., add a “lemon” class),
   - tune `CONFIDENCE` (e.g., 70–85 for stricter predictions).
+
+## Train your own model on Roboflow (quick guide)
+1) Create a Roboflow account and a new Object Detection project.
+2) Upload images (more is better; diverse lighting/backgrounds). For demo I used ~50 apple images.
+3) Annotate bounding boxes for the target class(es) (e.g., `apple`).
+4) Generate a dataset version and start training with “Roboflow 3.0 Object Detection (Fast)” (or choose Accurate for quality over speed).
+5) After training, open the model page and note:
+   - API key: Account → Settings → API Keys
+   - Workspace slug: the first path segment in the URL (e.g., `https://app.roboflow.com/<workspace>/...`)
+   - Project slug and version: visible in the model URL (e.g., `.../<project-slug>/models/<project-slug>/<version>`)
+6) Put these values into `.env` as shown in Configuration and run this repo.
 
 ## Troubleshooting
 - 401/403: check `ROBOFLOW_API_KEY`.
