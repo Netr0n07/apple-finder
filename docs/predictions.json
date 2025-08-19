@@ -1,0 +1,56 @@
+{
+  "predictions": [
+    {
+      "x": 539,
+      "y": 431,
+      "width": 356,
+      "height": 334,
+      "confidence": 0.8988513350486755,
+      "class": "Jablko",
+      "class_id": 0,
+      "detection_id": "b2ceb4d1-4888-4245-94b8-6c7546e884dc",
+      "image_path": "outputs\\processed_input.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    },
+    {
+      "x": 829,
+      "y": 477,
+      "width": 304,
+      "height": 271,
+      "confidence": 0.8910729885101318,
+      "class": "Jablko",
+      "class_id": 0,
+      "detection_id": "f011d03f-53d5-4963-ad24-677469ad1a50",
+      "image_path": "outputs\\processed_input.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    },
+    {
+      "x": 255,
+      "y": 372,
+      "width": 297,
+      "height": 283,
+      "confidence": 0.8735803961753845,
+      "class": "Jablko",
+      "class_id": 0,
+      "detection_id": "2038032f-fd2f-4f05-87aa-1a881653ed5d",
+      "image_path": "outputs\\processed_input.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    },
+    {
+      "x": 748,
+      "y": 228,
+      "width": 361,
+      "height": 297,
+      "confidence": 0.5325474143028259,
+      "class": "Jablko",
+      "class_id": 0,
+      "detection_id": "90569839-2965-4f50-b35f-76c933ffd991",
+      "image_path": "outputs\\processed_input.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    }
+  ],
+  "image": {
+    "width": "1081",
+    "height": "720"
+  }
+}

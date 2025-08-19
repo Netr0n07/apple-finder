@@ -1,0 +1,8 @@
+pandas
+python-dotenv
+roboflow
+jupyter
+opencv-python
+numpy
+matplotlib
+supervision
